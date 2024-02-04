@@ -1,3 +1,14 @@
+/**
+ * Project: Solo Lab2 Assignment Networking
+ * Purpose Details: Network analysis app with options for network ping,
+                    NIC details, port scanning, and viewing the routing table
+ * Course: IST 242
+ * Author: Charlie Defelice
+ * Date Developed: 2/3/24
+ * Last Date Changed: 2/4/24
+ * Rev: 2.3
+ */
+
 import java.util.Scanner;
 
 public class Main
@@ -38,7 +49,7 @@ public class Main
         while (choice != 0);
     }
 
-    //Display the user menu options.
+    //Display the user menu options
     private static void displayMenu()
     {
         System.out.println("User Menu for System Network Analyzer:");
@@ -49,15 +60,15 @@ public class Main
         System.out.println("0. Exit");
     }
 
-    //Perform a network ping using the PingExample class.
+    //Perform a network ping using the PingExample class
     private static void performNetworkPing()
     {
-        // Call PingExample class
+        //Call PingExample class
         PingExample pingExample = new PingExample("www.google.com");
         pingExample.performPing();
     }
 
-    //Show NIC Network Interface card details using the NetworkInfo class.
+    //Show NIC Network Interface card details using the NetworkInfo class
     private static void showNICDetails()
     {
         //Call NetworkInfo class
@@ -65,7 +76,7 @@ public class Main
         networkInfo.showNICDetails();
     }
 
-    //Perform a port scan on the local computer using the PortScanner class.
+    //Perform a port scan on the local computer using the PortScanner class
     private static void performPortScan()
     {
         //Call PortScanner class
@@ -73,7 +84,7 @@ public class Main
         portScanner.scanPorts();
     }
 
-    //Show the routing table using the RoutingTablePrinter class.
+    //Show the routing table using the RoutingTablePrinter class
     private static void showRoutingTable()
     {
         //Call RoutingTablePrinter class
