@@ -10,12 +10,12 @@ public class NetworkInfo
     {
         try
         {
-            //Get the local host information
+            //Gets local host information
             InetAddress localhost = InetAddress.getLocalHost();
             System.out.println("Local Hostname: " + localhost.getHostName());
             System.out.println("Local IP Address: " + localhost.getHostAddress());
 
-            //Get information about network interfaces
+            //Gets information about network interfaces
             Enumeration<NetworkInterface> networkInterfaces = NetworkInterface.getNetworkInterfaces();
             while (networkInterfaces.hasMoreElements())
             {
@@ -40,7 +40,7 @@ public class NetworkInfo
         }
     }
 
-    //Helper method to format MAC address as a string
+    //Helper method to format the MAC address as a string
     private static String formatMACAddress(byte[] mac)
     {
         StringBuilder formattedMAC = new StringBuilder();

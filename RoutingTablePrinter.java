@@ -8,10 +8,10 @@ public class RoutingTablePrinter
     {
         try
         {
-            //Execute the "route print" command on Windows
+            //Executes the "route print" command on Windows
             Process process = Runtime.getRuntime().exec("route print");
 
-            //Read the output of the command
+            //Reads the output of the command
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
             while ((line = reader.readLine()) != null)
@@ -19,7 +19,7 @@ public class RoutingTablePrinter
                 System.out.println(line);
             }
 
-            // Close the reader and wait for the process to exit
+            //Closes the reader and waits for the process to finish
             reader.close();
             process.waitFor();
         }

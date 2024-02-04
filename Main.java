@@ -18,7 +18,7 @@ public class Main
         Scanner scanner = new Scanner(System.in);
         int choice;
 
-        //Main loop for user interaction and menu-driven functionality
+        //Interaction and menu functionality
         do
         {
             displayMenu();
@@ -49,7 +49,7 @@ public class Main
         while (choice != 0);
     }
 
-    //Display the user menu options
+    //Displays the user menu options
     private static void displayMenu()
     {
         System.out.println("User Menu for System Network Analyzer:");
@@ -60,34 +60,30 @@ public class Main
         System.out.println("0. Exit");
     }
 
-    //Perform a network ping using the PingExample class
+    //Pings using the PingExample class
     private static void performNetworkPing()
     {
-        //Call PingExample class
         PingExample pingExample = new PingExample("www.google.com");
         pingExample.performPing();
     }
 
-    //Show NIC Network Interface card details using the NetworkInfo class
+    //Show's NIC details using the NetworkInfo class
     private static void showNICDetails()
     {
-        //Call NetworkInfo class
         NetworkInfo networkInfo = new NetworkInfo();
         networkInfo.showNICDetails();
     }
 
-    //Perform a port scan on the local computer using the PortScanner class
+    //Performs a port scan on the local computer using the PortScanner class
     private static void performPortScan()
     {
-        //Call PortScanner class
         PortScanner portScanner = new PortScanner("localhost");
         portScanner.scanPorts();
     }
 
-    //Show the routing table using the RoutingTablePrinter class
+    //Shows the routing table using the RoutingTablePrinter class
     private static void showRoutingTable()
     {
-        //Call RoutingTablePrinter class
         RoutingTablePrinter routingTablePrinter = new RoutingTablePrinter();
         routingTablePrinter.printRoutingTable();
     }

@@ -5,11 +5,13 @@ public class PortScanner
 {
     private String targetHost;
 
+    //Constructor to initialize the target host
     public PortScanner(String targetHost)
     {
         this.targetHost = targetHost;
     }
 
+    // Method to scan ports within a specified range
     public void scanPorts()
     {
         String targetHost = this.targetHost;

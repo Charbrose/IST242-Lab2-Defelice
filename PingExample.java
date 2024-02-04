@@ -27,12 +27,12 @@ public class PingExample
         }
         catch (UnknownHostException e)
         {
-            //Handle unknown host exception
+            //Handles the unknown host exception
             System.err.println("Unknown host: " + hostName);
         }
         catch (Exception e)
         {
-            //Handle general exception during ping
+            //Handles the general exception during ping
             System.err.println("Error while pinging " + hostName + ": " + e.getMessage());
         }
     }
